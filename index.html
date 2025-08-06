@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yard Sale </title>
+  <title>Yard Sale – spdatadash.cloud</title>
   <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
   <style>
     body {
@@ -24,23 +24,6 @@
       word-wrap: break-word;
       line-height: 1.4;
     }
-      #item-table {
-      max-width: 100%;
-      overflow-x: auto;
-    }
-  
-    .tabulator {
-        min-width: 1000px;
-      }
-    .tabulator-header {
-      top: 0;
-      z-index: 10;
-      background-color: white;
-    }
-    .tabulator-cell {
-      white-space: normal;
-      word-break: break-word;
-    }
 
   </style>
 </head>
@@ -50,10 +33,7 @@
     <button onclick="toggleUnits()">Switch to Imperial</button>
   </div>
   
-  <div id="table-wrapper" style="height: 500px; overflow-y: auto;">
   <div id="item-table"></div>
-  </div>
-
 
   <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
   <script>
@@ -80,8 +60,8 @@
 
         table = new Tabulator("#item-table", {
           data: itemsRaw,
-          layout: "fitDataTable",
-          responsiveLayout: false,
+          layout: "fitColumns",
+          responsiveLayout: False,
           columns: [
             { title: "ID", field: "id", width: 60 },
             { title: "Name", field: "name", headerFilter: "input", widthGrow: 2, formatter: "textarea" },
