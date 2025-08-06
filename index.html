@@ -61,7 +61,7 @@
         table = new Tabulator("#item-table", {
           data: itemsRaw,
           layout: "fitColumns",
-          responsiveLayout: "collapse",
+          responsiveLayout: false,
           columns: [
             { title: "ID", field: "id", width: 60 },
             { title: "Name", field: "name", headerFilter: "input", widthGrow: 2, formatter: "textarea" },
