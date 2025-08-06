@@ -1,0 +1,385 @@
+[
+    {
+        "id": 1,
+        "name": "Brown Colored Wooden Table",
+        "size": "100W x 50L x 72H",
+        "weight": "",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Black, steel frame. Dark wooden surface.",
+        "status": "available",
+        "price": 20
+
+    },
+    {
+        "id": 2,
+        "name": "Black Colored Wooden Table",
+        "size": "110W x 67L x 75H",
+        "weight": "",
+        "quantity": 2,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 20
+
+    },
+    {
+        "id": 3,
+        "name": "Cartman Multifunctional Tool box",
+        "size": "37.5W x 23L x 7H",
+        "weight": "",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Contains a claw hammer, a steel tape, a plier, 6 wrenches from 5/16 to 5/8 inch, a set of screwdrivers and hex wrenches, a box cutter, electrician tape and a box of screws",
+        "status": "available",
+        "price": 9
+
+    },
+    {
+        "id": 4,
+        "name": "Hawerk Vanadium Woodworking Chisel Box",
+        "size": "31W x 25L x 6H",
+        "weight": "",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Contains a set of 6 vanadium woodworking chisels ranging from 6mm to 38mm wide.",
+        "status": "available",
+        "price": 25
+
+    },
+    {
+        "id": 5,
+        "name": "Elmer's Carpenter Wood Glue",
+        "size": "9W x 4.5L x 23H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Opened and used with substantial amount remaining",
+        "status": "available",
+        "price": 3
+
+    },
+    {
+        "id": 6,
+        "name": "Wood Teak Oil",
+        "size": "6.5W x 6.5L x 20H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Opened and used with substantial amount remaining",
+        "status": "available",
+        "price": 8
+
+    },
+    {
+        "id": 7,
+        "name": "30-Pack of Toilet Tissue",
+        "size": "58W x 35L x 21H",
+        "weight":"4.8",
+        "quantity": 3,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 15
+
+    },
+    {
+        "id": 8,
+        "name": "Gillet Shave Gel",
+        "size": "5W x 5L x 19H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 2
+
+    },
+    {
+        "id": 9,
+        "name": "6-Pack of Quaker Rice Cake Lightly Salted",
+        "size": "42W x 27L x 18.5H",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 9
+
+    },
+    {
+        "id": 10,
+        "name": "Instant Pot Pressure Cooker",
+        "size": "30W x 27L x 27H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 25
+
+    },
+    {
+        "id": 11,
+        "name": "Crock Pot",
+        "size": "40W x 30L x 27H",
+        "weight":"",
+        "quantity": 3,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 16
+
+    },
+    {
+        "id": 12,
+        "name": "Black Colored Foldable Chair",
+        "size": "45W x 97H",
+        "weight":"",
+        "quantity": 6,
+		"sold": 0,
+        "note": "Measured vertically when folded.",
+        "status": "available",
+        "price": 8
+
+    },
+    {
+        "id": 13,
+        "name": "Black Colored Foldable Stool",
+        "size": "30W x 36H",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "Measured vertically when folded.",
+        "status": "available",
+        "price": 4
+
+    },
+    {
+        "id": 14,
+        "name": "Black Colored Office Chair",
+        "size": "63W x 50L x 123H",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 25
+
+    },
+    {
+        "id": 15,
+        "name": "Queen Size Bed Frame and Matress",
+        "size": "Queen",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 50
+
+    },
+    {
+        "id": 16,
+        "name": "Mitten",
+        "size": "18W x 35L",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "One is silicone and the other is cotton",
+        "status": "available",
+        "price": 3
+
+    },
+    {
+        "id": 17,
+        "name": "Shibazi Chinese Chef's Knife",
+        "size": "10W x 34L",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "San Mai Steel. Beware of rust. Sheath NOT included.",
+        "status": "available",
+        "price": 15
+
+    },
+    {
+        "id": 18,
+        "name": "Kitchen Aid Japanese Chef's Knife",
+        "size": "5W x 35L",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Sheath included",
+        "status": "available",
+        "price": 12
+
+    },
+    {
+        "id": 19,
+        "name": "Honing Steel",
+        "size": "35L",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 5
+
+    },
+    {
+        "id": 20,
+        "name": "Spatulas",
+        "size": "37L",
+        "weight":"",
+        "quantity": 5,
+		"sold": 0,
+        "note": "2 Silicone. 1 Steel. 1 Wooden",
+        "status": "available",
+        "price": 3
+
+    },
+    {
+        "id": 21,
+        "name": "Cooking Spoons",
+        "size": "30L",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "1 Silicone. 1 Steel",
+        "status": "available",
+        "price": 3
+
+    },
+    {
+        "id": 22,
+        "name": "BBQ Tongs",
+        "size": "33L",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Silicone tips",
+        "status": "available",
+        "price": 2
+
+    },
+    {
+        "id": 23,
+        "name": "Food Scale",
+        "size": "15W x 18L",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Battery NOT included",
+        "status": "available",
+        "price": 3
+
+    },
+    {
+        "id": 24,
+        "name": "Steel Stew Pot with Lid",
+        "size": "33W x 24L x 17H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 9
+
+    },
+    {
+        "id": 25,
+        "name": "Large Frying Pan",
+        "size": "27W x 53L x 15H",
+        "weight":"",
+        "quantity": 2,
+		"sold": 0,
+        "note": "One Steel with GlassLid included. The other with non-stick coating.",
+        "status": "available",
+        "price": 8
+
+    },
+    {
+        "id": 26,
+        "name": "Small Frying Pan",
+        "size": "24W x 38L x 12H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Made if non-stick granite stone. Lid included",
+        "status": "available",
+        "price": 4
+
+    },
+    {
+        "id": 27,
+        "name": "Steel Kettle",
+        "size": "20W x 18L x 23H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 2
+
+    },
+    {
+        "id": 28,
+        "name": "Indoor Lamp",
+        "size": "168/175/183H",
+        "weight":"",
+        "quantity": 3,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 8
+
+    },
+    {
+        "id": 29,
+        "name": "White Plastic Laundry Basket",
+        "size": "66W x 46L x 27H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "",
+        "status": "available",
+        "price": 8
+
+    },
+    {
+        "id": 30,
+        "name": "Vintage-style Japanese Handcrafted Ashwood Kanasaibo (Studded War Club)",
+        "size": "8W x 8L x 140H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Wield with care. Manufacturer not responsible for injury or death.",
+        "status": "available",
+        "price": "Price Negotiable (OBO)"
+
+    },
+    {
+        "id": 31,
+        "name": "Waterdrop Filtration Pitcher",
+        "size": "24W x 13.5L x 25H",
+        "weight":"",
+        "quantity": 1,
+		"sold": 0,
+        "note": "Model name WD-PT-05B-L and needs compatible filters",
+        "status": "available",
+        "price": 3
+    },
+    {
+        "id": 32,
+        "name": "Waterdrop Filter Replacement",
+        "size": "13W x 8L x 6.5H",
+        "weight":"",
+        "quantity": 4,
+		"sold": 0,
+        "note": "Filters compatible with Waterdrop WD-PT-05B-L pitchers",
+        "status": "available",
+        "price": 4
+    }
+  ]
+  

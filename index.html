@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yard Sale – spdatadash.cloud</title>
+  <link href="https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .sold-row {
+      background-color: #f9dcdc !important;
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+    .tabulator-cell {
+      white-space: normal !important;
+      word-wrap: break-word;
+      line-height: 1.4;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>🏷️ Qile's Yard Sale Inventory</h1>
+  <div style="text-align: center; margin-bottom: 1rem;">
+    <button onclick="toggleUnits()">Switch to Imperial</button>
+  </div>
+  
+  <div id="item-table"></div>
+
+  <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
+  <script>
+    let useImperial = false;
+
+    function toggleUnits() {
+      useImperial = !useImperial;
+      document.querySelector("button").innerText = useImperial ? "Switch to Metric" : "Switch to Imperial";
+
+      table.getColumn("size").updateDefinition({ title: useImperial ? "Size (in)" : "Size (cm)" });
+      table.getColumn("weight").updateDefinition({ title: useImperial ? "Weight (lb)" : "Weight (kg)" });
+
+      table.replaceData(itemsRaw); // re-render with formatters
+    }
+
+
+    let table;
+    let itemsRaw = [];
+
+    fetch("items.json")
+      .then(res => res.json())
+      .then(data => {
+        itemsRaw = data;
+
+        table = new Tabulator("#item-table", {
+          data: itemsRaw,
+          layout: "fitColumns",
+          responsiveLayout: "collapse",
+          columns: [
+            { title: "ID", field: "id", width: 60 },
+            { title: "Name", field: "name", headerFilter: "input", widthGrow: 2, formatter: "textarea" },
+            { title: "Size (cm)", field: "size", formatter: sizeFormatter },
+            { title: "Weight (kg)", field: "weight", formatter: weightFormatter, hozAlign: "center"},
+            { title: "Qty", field: "quantity", hozAlign: "center"},
+            {
+              title: "Sold",
+              field: "sold",
+              hozAlign: "center",
+              formatter: cell => cell.getValue() == 1 ? "✔️" : ""
+            },
+            { title: "Status", field: "status", hozAlign: "center", width: 80 },
+            {
+              title: "Price",
+              field: "price",
+              hozAlign: "right",
+              formatter: cell => {
+                const val = cell.getValue();
+                return typeof val === "number" ? `$${val.toFixed(2)}` : val;
+              }
+            },
+            { title: "Note", field: "note", formatter: "textarea", widthGrow: 4 }
+          ],
+          rowFormatter: function(row) {
+            const data = row.getData();
+            if (data.sold === 1 || data.status === "sold") {
+              row.getElement().classList.add("sold-row");
+            }
+          }
+        });
+      });
+
+    // --- Unit formatters ---
+    function sizeFormatter(cell) {
+      const val = cell.getValue();
+      if (!val) return "";
+
+      // Match pattern like: "100W x 50L x 72H"
+      const parts = val.match(/(\d+(\.\d+)?)([a-zA-Z]+)/g);
+      if (!parts) return val;
+
+      const converted = parts.map(part => {
+        const [, numStr, , label] = part.match(/(\d+(\.\d+)?)([a-zA-Z]+)/);
+        const num = parseFloat(numStr);
+
+        const convertedNum = useImperial
+          ? (num / 2.54).toFixed(1)  // cm → inch
+          : num.toFixed(1);
+
+        return `${convertedNum}${label}`;
+      });
+
+      return converted.join(" x ");
+    }
+
+
+    function weightFormatter(cell) {
+      const val = parseFloat(cell.getValue());
+      if (isNaN(val)) return "";
+      return useImperial ? (val * 2.20462).toFixed(1) : val.toFixed(1);
+    }
+
+
+  </script>
+</body>
+</html>
+
