@@ -30,7 +30,7 @@
     }
   
     .tabulator {
-      min-width: 800px;
+      min-width: 1000px;
     }
 
   </style>
@@ -41,7 +41,10 @@
     <button onclick="toggleUnits()">Switch to Imperial</button>
   </div>
   
+  <div style="overflow-x:auto; width: 100%;">
   <div id="item-table"></div>
+  </div>
+
 
   <script src="https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js"></script>
   <script>
@@ -68,7 +71,7 @@
 
         table = new Tabulator("#item-table", {
           data: itemsRaw,
-          layout: "fitColumns",
+          layout: "fitDataTable",
           responsiveLayout: false,
           columns: [
             { title: "ID", field: "id", width: 60 },
